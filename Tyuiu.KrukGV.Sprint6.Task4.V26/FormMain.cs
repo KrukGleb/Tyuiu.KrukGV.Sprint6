@@ -87,10 +87,8 @@ namespace Tyuiu.KrukGV.Sprint6.Task4.V26
         }
         private void buttonAboutClick(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 3, вариант 19 выполнил студент группы НТм-25-1 Крук Глеб Владиславович", "О программе", MessageBoxButtons.OK);
+            MessageBox.Show("Таск 4, вариант 26 выполнил студент группы НТм-25-1 Крук Глеб Владиславович", "О программе", MessageBoxButtons.OK);
         }
-
-
 
         private void textBoxVarX_KeyPress(object sender, KeyPressEventArgs e)
         {

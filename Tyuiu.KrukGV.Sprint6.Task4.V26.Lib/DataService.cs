@@ -17,7 +17,7 @@ namespace Tyuiu.KrukGV.Sprint6.Task4.V26.Lib
                     res[i] = 0;
                 else
                 {
-                    res[i] = 2 * Math.Sin(x) / (3 * x + 1.2) + Math.Cos(x) - 14 * x;
+                    res[i] = 5-3*x + (1+Math.Sin(x)) / (2 * x - 0.5);
                     res[i] = Math.Round(res[i], 2);
                 }
             }

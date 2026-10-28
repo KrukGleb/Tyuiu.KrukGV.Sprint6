@@ -52,7 +52,7 @@
             // 
             // chartFunction_KGV
             // 
-            chartFunction_KGV.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            chartFunction_KGV.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textAnnotation1.AnchorAlignment = ContentAlignment.TopCenter;
             textAnnotation1.Name = "TextAnnotation1";
             textAnnotation1.Text = "График f(x)";
@@ -82,6 +82,7 @@
             // 
             // textBoxOutput_KGV
             // 
+            textBoxOutput_KGV.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             textBoxOutput_KGV.Location = new Point(6, 22);
             textBoxOutput_KGV.Multiline = true;
             textBoxOutput_KGV.Name = "textBoxOutput_KGV";
@@ -90,6 +91,7 @@
             // 
             // groupBoxTask_KGV
             // 
+            groupBoxTask_KGV.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             groupBoxTask_KGV.Controls.Add(textBox1);
             groupBoxTask_KGV.Location = new Point(12, 12);
             groupBoxTask_KGV.Name = "groupBoxTask_KGV";
@@ -100,6 +102,7 @@
             // 
             // groupBoxInput_KGV
             // 
+            groupBoxInput_KGV.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             groupBoxInput_KGV.Controls.Add(labelEnd_KGV);
             groupBoxInput_KGV.Controls.Add(labelStart_KGV);
             groupBoxInput_KGV.Controls.Add(textBoxEnd_KGV);
@@ -146,7 +149,7 @@
             // 
             // buttonSave_KGV
             // 
-            buttonSave_KGV.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonSave_KGV.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             buttonSave_KGV.Location = new Point(632, 25);
             buttonSave_KGV.Name = "buttonSave_KGV";
             buttonSave_KGV.Size = new Size(75, 65);
@@ -157,6 +160,7 @@
             // 
             // buttonAbout_KGV
             // 
+            buttonAbout_KGV.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             buttonAbout_KGV.BackColor = SystemColors.ActiveCaption;
             buttonAbout_KGV.Location = new Point(713, 25);
             buttonAbout_KGV.Name = "buttonAbout_KGV";
@@ -168,6 +172,7 @@
             // 
             // buttonCalculate_KGV
             // 
+            buttonCalculate_KGV.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             buttonCalculate_KGV.BackColor = Color.FromArgb(192, 255, 192);
             buttonCalculate_KGV.Location = new Point(545, 25);
             buttonCalculate_KGV.Name = "buttonCalculate_KGV";
@@ -179,6 +184,7 @@
             // 
             // groupBoxOutput_KGV
             // 
+            groupBoxOutput_KGV.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             groupBoxOutput_KGV.Controls.Add(textBoxOutput_KGV);
             groupBoxOutput_KGV.Location = new Point(18, 105);
             groupBoxOutput_KGV.Name = "groupBoxOutput_KGV";
