@@ -22,8 +22,8 @@ namespace Tyuiu.KrukGV.Sprint6.Task5.V22
                 dataGridViewOutput_KGV.Rows.Clear();
 
                 dataGridViewOutput_KGV.ColumnCount = 2;
-                dataGridViewOutput_KGV.Columns[0].Name = "X";
-                dataGridViewOutput_KGV.Columns[1].Name = "f(x)";
+                dataGridViewOutput_KGV.Columns[0].Name = "№";
+                dataGridViewOutput_KGV.Columns[1].Name = "Из файла";
 
                 
                 for (var i = 0; i < len; i++)
