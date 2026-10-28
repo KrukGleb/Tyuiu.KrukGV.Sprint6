@@ -1,13 +1,30 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint6;
 
 
-namespace Tyuiu.KrukGV.Sprint6.Task0.V24.Lib
+namespace Tyuiu.KrukGV.Sprint6.Task2.V15.Lib
 {
-    public class DataService : ISprint6Task0V24
+    public class DataService : ISprint6Task2V15
     {
-        public double Calculate(int x)
+        public double[] GetMassFunction(int startValue, int stopValue)
         {
-            return Math.Round(Math.Pow(x - 1, 3 * x + 1), 3);
+            int len = Math.Abs(stopValue - startValue) + 1;
+            double[] res = new double[len];
+
+            for (int i = 0; i < len; i++)
+            {
+                var x = i + startValue;
+                if (3 * x + 1.2 == 0)
+                    res[i] = 0;
+                else
+                {
+                    res[i] = 2*Math.Sin(x)/ (3 * x + 1.2) + Math.Cos(x) - 14*x;
+                    res[i] = Math.Round(res[i], 2);
+                }
+
+
+            }
+
+            return res;
         }
     }
 }

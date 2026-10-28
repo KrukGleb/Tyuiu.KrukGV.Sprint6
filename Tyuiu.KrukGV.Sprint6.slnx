@@ -12,5 +12,6 @@
   <Folder Name="/Task2/">
     <Project Path="Tyuiu.KrukGV.Sprint6.Task2.V15.Lib/Tyuiu.KrukGV.Sprint6.Task2.V15.Lib.csproj" />
     <Project Path="Tyuiu.KrukGV.Sprint6.Task2.V15.Test/Tyuiu.KrukGV.Sprint6.Task2.V15.Test.csproj" />
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task2.V15/Tyuiu.KrukGV.Sprint6.Task2.V15.csproj" Id="ec7e07ce-a2c8-473f-8b5c-f4d0dded5467" />
   </Folder>
 </Solution>

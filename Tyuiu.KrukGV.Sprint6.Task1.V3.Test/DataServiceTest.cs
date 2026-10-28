@@ -11,7 +11,7 @@ namespace Tyuiu.KrukGV.Sprint6.Task1.V3.Test
         {
             DataService ds = new DataService();
             double[] res = ds.GetMassFunction(-5, 5);
-            double[] ans = {70.14, 55.21, 41.05, 27.96, 15.48, 1, -13.06, -28.16, -42.96, -56.77, -69.83};
+            double[] ans = {19.81, 16.79, 13.87, 10.98, 7.94, 3, 3.23, -0.45, -3.79, -6.97, -10};
 
             CollectionAssert.AreEqual(ans, res);
         }
