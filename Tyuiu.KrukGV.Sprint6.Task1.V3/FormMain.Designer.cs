@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.KrukGV.Sprint6.Task1.V3
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             groupBoxTask_KGV = new GroupBox();
             textBoxTask_KGV = new TextBox();
             groupBoxOutput_KGV = new GroupBox();
+            textBoxOutput_KGV = new TextBox();
             labelResult_KGV = new Label();
             groupBoxInput_KGV = new GroupBox();
             textBoxEnd_KGV = new TextBox();
@@ -40,7 +41,6 @@
             labelStart_KGV = new Label();
             buttonAbout_KGV = new Button();
             buttonCalculate_KGV = new Button();
-            textBoxOutput_KGV = new TextBox();
             groupBoxTask_KGV.SuspendLayout();
             groupBoxOutput_KGV.SuspendLayout();
             groupBoxInput_KGV.SuspendLayout();
@@ -76,6 +76,15 @@
             groupBoxOutput_KGV.TabIndex = 1;
             groupBoxOutput_KGV.TabStop = false;
             groupBoxOutput_KGV.Text = "Вывод данных";
+            // 
+            // textBoxOutput_KGV
+            // 
+            textBoxOutput_KGV.Location = new Point(6, 37);
+            textBoxOutput_KGV.Multiline = true;
+            textBoxOutput_KGV.Name = "textBoxOutput_KGV";
+            textBoxOutput_KGV.ReadOnly = true;
+            textBoxOutput_KGV.Size = new Size(309, 383);
+            textBoxOutput_KGV.TabIndex = 2;
             // 
             // labelResult_KGV
             // 
@@ -155,16 +164,7 @@
             buttonCalculate_KGV.UseVisualStyleBackColor = false;
             buttonCalculate_KGV.Click += buttonDone_Click;
             // 
-            // textBoxOutput_KGV
-            // 
-            textBoxOutput_KGV.Location = new Point(6, 37);
-            textBoxOutput_KGV.Multiline = true;
-            textBoxOutput_KGV.Name = "textBoxOutput_KGV";
-            textBoxOutput_KGV.ReadOnly = true;
-            textBoxOutput_KGV.Size = new Size(309, 383);
-            textBoxOutput_KGV.TabIndex = 2;
-            // 
-            // Form1
+            // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -174,8 +174,8 @@
             Controls.Add(groupBoxInput_KGV);
             Controls.Add(groupBoxOutput_KGV);
             Controls.Add(groupBoxTask_KGV);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "FormMain";
+            Text = "Спринт 6 | Таск 1 | Вариант 3 | Крук Г.В.";
             groupBoxTask_KGV.ResumeLayout(false);
             groupBoxTask_KGV.PerformLayout();
             groupBoxOutput_KGV.ResumeLayout(false);

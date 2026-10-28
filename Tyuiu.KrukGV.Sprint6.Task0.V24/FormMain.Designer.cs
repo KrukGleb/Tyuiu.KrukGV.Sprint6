@@ -164,7 +164,7 @@
             Controls.Add(groupBoxInput_KGV);
             Controls.Add(groupBoxInfo_KGV);
             Name = "FormMain";
-            Text = "Form1";
+            Text = "Спринт 6 | Таск 0 | Вариант 24 | Крук Г.В.";
             groupBoxInfo_KGV.ResumeLayout(false);
             groupBoxInfo_KGV.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_KGV).EndInit();

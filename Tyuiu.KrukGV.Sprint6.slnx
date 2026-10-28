@@ -14,4 +14,29 @@
     <Project Path="Tyuiu.KrukGV.Sprint6.Task2.V15.Test/Tyuiu.KrukGV.Sprint6.Task2.V15.Test.csproj" />
     <Project Path="Tyuiu.KrukGV.Sprint6.Task2.V15/Tyuiu.KrukGV.Sprint6.Task2.V15.csproj" Id="ec7e07ce-a2c8-473f-8b5c-f4d0dded5467" />
   </Folder>
+  <Folder Name="/Task3/">
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task3.V19.Lib/Tyuiu.KrukGV.Sprint6.Task3.V19.Lib.csproj" Id="74e77a72-6c26-43e7-b6b6-69578956d1be" />
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task3.V19.Test/Tyuiu.KrukGV.Sprint6.Task3.V19.Test.csproj" Id="05d1b99f-7013-4e5d-a239-11d038fc96a6" />
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task3.V19/Tyuiu.KrukGV.Sprint6.Task3.V19.csproj" Id="e9ad32d5-1db2-47d6-bbbe-631c5a055e3c" />
+  </Folder>
+  <Folder Name="/Task4/">
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task4.V26.Lib/Tyuiu.KrukGV.Sprint6.Task4.V26.Lib.csproj" Id="e2ed32d9-4dad-4529-b5cc-f2d2b1f1d200" />
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task4.V26.Test/Tyuiu.KrukGV.Sprint6.Task4.V26.Test.csproj" Id="23759a32-8e32-47cc-a844-94a5cdbaede5" />
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task4.V26/Tyuiu.KrukGV.Sprint6.Task4.V26.csproj" Id="9069e1ca-9558-441b-b3ec-37927f4aa4e0" />
+  </Folder>
+  <Folder Name="/Task5/">
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task5.V22.Lib/Tyuiu.KrukGV.Sprint6.Task5.V22.Lib.csproj" Id="10118599-babd-4bd9-bd7f-3d95346b51bc" />
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task5.V22.Test/Tyuiu.KrukGV.Sprint6.Task5.V22.Test.csproj" Id="0995aa05-df06-4ac8-800b-a320b55c33eb" />
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task5.V22/Tyuiu.KrukGV.Sprint6.Task5.V22.csproj" Id="91f66ddd-981d-409f-abe3-35c20570ad8c" />
+  </Folder>
+  <Folder Name="/Task6/">
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task6.V11.Lib/Tyuiu.KrukGV.Sprint6.Task6.V11.Lib.csproj" Id="4ccf3ed5-716e-447b-9c1f-c11180cdc05b" />
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task6.V11.Test/Tyuiu.KrukGV.Sprint6.Task6.V11.Test.csproj" Id="d8a940d0-3f26-4fde-8033-024828b51f70" />
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task6.V11/Tyuiu.KrukGV.Sprint6.Task6.V11.csproj" Id="1c2b0fc8-1c91-46ac-8938-d850348f3057" />
+  </Folder>
+  <Folder Name="/Task7/">
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task7.V5.Lib/Tyuiu.KrukGV.Sprint6.Task7.V5.Lib.csproj" Id="a17cd9be-d307-4516-9c13-cec97a62587a" />
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task7.V5.Test/Tyuiu.KrukGV.Sprint6.Task7.V5.Test.csproj" Id="eca80b8f-3e04-4364-840c-0455bbcd9163" />
+    <Project Path="Tyuiu.KrukGV.Sprint6.Task7.V5/Tyuiu.KrukGV.Sprint6.Task7.V5.csproj" Id="e4bb9119-5c17-43ad-b2d2-d71fa4bfced5" />
+  </Folder>
 </Solution>

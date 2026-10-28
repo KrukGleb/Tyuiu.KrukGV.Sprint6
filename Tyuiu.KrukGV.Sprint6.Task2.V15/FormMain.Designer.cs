@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.KrukGV.Sprint6.Task2.V15
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -155,7 +155,7 @@
             buttonCalculate_KGV.UseVisualStyleBackColor = false;
             buttonCalculate_KGV.Click += buttonDone_Click;
             // 
-            // Form1
+            // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -165,8 +165,8 @@
             Controls.Add(groupBoxOutput_KGV);
             Controls.Add(groupBoxInput_KGV);
             Controls.Add(groupBoxTask_KGV);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "FormMain";
+            Text = "Спринт 6 | Таск 2 | Вариант 15 | Крук Г.В.";
             groupBoxTask_KGV.ResumeLayout(false);
             groupBoxTask_KGV.PerformLayout();
             groupBoxInput_KGV.ResumeLayout(false);
