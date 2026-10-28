@@ -1,6 +1,6 @@
-﻿namespace Tyuiu.KrukGV.Sprint6.Task7.V5
+﻿namespace Tyuiu.KrukGV.Sprint6.Task5.V22
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,10 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            SuspendLayout();
+            // 
+            // FormMain
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Text = "Form1";
+            Name = "FormMain";
+            Text = "Спринт 6 | Таск 5 | Вариант 22 | Крук Г.В.";
+            ResumeLayout(false);
         }
 
         #endregion

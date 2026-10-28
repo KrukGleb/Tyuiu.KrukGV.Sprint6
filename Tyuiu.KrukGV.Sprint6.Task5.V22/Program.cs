@@ -11,7 +11,7 @@ namespace Tyuiu.KrukGV.Sprint6.Task5.V22
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new FormMain());
         }
     }
 }
