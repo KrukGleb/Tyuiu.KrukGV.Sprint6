@@ -6,17 +6,16 @@ namespace Tyuiu.KrukGV.Sprint6.Task7.V5
     public partial class FormMain : Form
     {
         private readonly DataService ds = new DataService();
-        private int[,]? resultMatrix;
+        private int[,] resultMatrix;
 
         public FormMain()
         {
             InitializeComponent();
-            openFileDialogTask_KGV.Filter = "Р—РЅР°С‡РµРЅРёСЏ, СЂР°Р·РґРµР»С‘РЅРЅС‹Рµ Р·Р°РїСЏС‚С‹РјРё (*.csv)|*.csv|Р’СЃРµ С„Р°Р№Р»С‹ (*.*)|*.*";
-            saveFileDialogTask_KGV.Filter = "Р—РЅР°С‡РµРЅРёСЏ, СЂР°Р·РґРµР»С‘РЅРЅС‹Рµ Р·Р°РїСЏС‚С‹РјРё (*.csv)|*.csv|Р’СЃРµ С„Р°Р№Р»С‹ (*.*)|*.*";
+            openFileDialogTask_KGV.Filter = "Значения, разделённые запятыми (*.csv)|*.csv|Все файлы (*.*)|*.*";
+            saveFileDialogTask_KGV.Filter = "Значения, разделённые запятыми (*.csv)|*.csv|Все файлы (*.*)|*.*";
             saveFileDialogTask_KGV.FileName = "OutPutFileTask7.csv";
         }
 
-        // Р—Р°РїРѕР»РЅСЏРµС‚ dataGridView Р·РЅР°С‡РµРЅРёСЏРјРё РјР°С‚СЂРёС†С‹
         private static void FillGrid(DataGridView grid, int[,] matrix)
         {
             int rows = matrix.GetLength(0);
@@ -57,13 +56,13 @@ namespace Tyuiu.KrukGV.Sprint6.Task7.V5
                 dataGridViewOut_KGV.Columns.Clear();
                 resultMatrix = null;
 
-                groupBoxInput_KGV.Text = "Р¤Р°Р№Р»: " + openFileDialogTask_KGV.FileName;
+                groupBoxInput_KGV.Text = "Файл: " + openFileDialogTask_KGV.FileName;
                 buttonCalculate_KGV.Enabled = true;
                 buttonSave_KGV.Enabled = false;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("РќРµ СѓРґР°Р»РѕСЃСЊ РїСЂРѕС‡РёС‚Р°С‚СЊ С„Р°Р№Р»:\n" + ex.Message, "РћС€РёР±РєР°",
+                MessageBox.Show("Не удалось прочитать файл:\n" + ex.Message, "Ошибка",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -78,7 +77,7 @@ namespace Tyuiu.KrukGV.Sprint6.Task7.V5
             }
             catch (Exception ex)
             {
-                MessageBox.Show("РћС€РёР±РєР° РїСЂРё РѕР±СЂР°Р±РѕС‚РєРµ С„Р°Р№Р»Р°:\n" + ex.Message, "РћС€РёР±РєР°",
+                MessageBox.Show("Ошибка при обработке файла:\n" + ex.Message, "Ошибка",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -105,12 +104,12 @@ namespace Tyuiu.KrukGV.Sprint6.Task7.V5
                 }
 
                 File.WriteAllText(saveFileDialogTask_KGV.FileName, sb.ToString());
-                MessageBox.Show("Р¤Р°Р№Р» СЃРѕС…СЂР°РЅС‘РЅ:\n" + saveFileDialogTask_KGV.FileName, "Р“РѕС‚РѕРІРѕ",
+                MessageBox.Show("Файл сохранён:\n" + saveFileDialogTask_KGV.FileName, "Готово",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("РќРµ СѓРґР°Р»РѕСЃСЊ СЃРѕС…СЂР°РЅРёС‚СЊ С„Р°Р№Р»:\n" + ex.Message, "РћС€РёР±РєР°",
+                MessageBox.Show("Не удалось сохранить файл:\n" + ex.Message, "Ошибка",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

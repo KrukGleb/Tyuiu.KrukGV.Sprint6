@@ -4,7 +4,7 @@ namespace Tyuiu.KrukGV.Sprint6.Task7.V5.Lib
 {
     public class DataService : ISprint6Task7V5
     {
-        // Читает матрицу из csv-файла как есть (без изменений)
+        
         public int[,] LoadMatrix(string path)
         {
             string[] lines = File.ReadAllLines(path)
@@ -34,7 +34,6 @@ namespace Tyuiu.KrukGV.Sprint6.Task7.V5.Lib
             return matrix;
         }
 
-        // Значения последнего столбца, которые меньше 2, заменяет на 2
         public int[,] ReplaceLastColumn(int[,] matrix)
         {
             int rows = matrix.GetLength(0);
@@ -52,7 +51,6 @@ namespace Tyuiu.KrukGV.Sprint6.Task7.V5.Lib
             return result;
         }
 
-        // Метод интерфейса: загрузка из файла + замена в последнем столбце
         public int[,] GetMatrix(string path)
         {
             return ReplaceLastColumn(LoadMatrix(path));
