@@ -13,7 +13,11 @@ namespace Tyuiu.KrukGV.Sprint6.Task5.V22.Test
             string path = Path.Combine(Dir, "InPutDataFileTask6V11.txt");
 
             string res = ds.CollectTextFromFile(path);
-            string ans = "btwMCZUcB\nPADUsjhlu\nJmjQKHd\nTMRyztkPxzEVkcarVMlQ\nEUWCvEgL";
+            string ans = "btwMCZUcB" + Environment.NewLine +
+                "PADUsjhlu" + Environment.NewLine +
+                "JmjQKHd" + Environment.NewLine + 
+                "TMRyztkPxzEVkcarVMlQ" + Environment.NewLine +
+                "EUWCvEgL";
 
             Assert.AreEqual(ans, res);
         }
