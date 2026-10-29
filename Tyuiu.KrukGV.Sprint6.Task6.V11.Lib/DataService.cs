@@ -19,7 +19,7 @@ namespace Tyuiu.KrukGV.Sprint6.Task6.V11.Lib
                 if (words.Length >= 2)
                 {
                     string secondToLast = words[words.Length - 2];
-                    result += secondToLast + Environment.NewLine;
+                    result += secondToLast + " ";
                 }
             }
 

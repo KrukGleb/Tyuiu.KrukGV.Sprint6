@@ -5,7 +5,7 @@ namespace Tyuiu.KrukGV.Sprint6.Task7.V5
 {
     public partial class FormMain : Form
     {
-        private readonly DataService ds = new DataService();
+        private DataService ds = new DataService();
         private int[,] resultMatrix;
 
         public FormMain()
@@ -36,16 +36,16 @@ namespace Tyuiu.KrukGV.Sprint6.Task7.V5
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
-                {
                     grid[j, i].Value = matrix[i, j];
-                }
+
                 grid.Rows[i].HeaderCell.Value = (i + 1).ToString();
             }
         }
 
         private void buttonOpenFile_Click(object sender, EventArgs e)
         {
-            if (openFileDialogTask_KGV.ShowDialog() != DialogResult.OK) return;
+            if (openFileDialogTask_KGV.ShowDialog() != DialogResult.OK) 
+                return;
 
             try
             {
@@ -54,7 +54,6 @@ namespace Tyuiu.KrukGV.Sprint6.Task7.V5
 
                 dataGridViewOut_KGV.Rows.Clear();
                 dataGridViewOut_KGV.Columns.Clear();
-                resultMatrix = null;
 
                 groupBoxInput_KGV.Text = "Τΰιλ: " + openFileDialogTask_KGV.FileName;
                 buttonCalculate_KGV.Enabled = true;
@@ -84,8 +83,10 @@ namespace Tyuiu.KrukGV.Sprint6.Task7.V5
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            if (resultMatrix == null) return;
-            if (saveFileDialogTask_KGV.ShowDialog() != DialogResult.OK) return;
+            if (resultMatrix == null) 
+                return;
+            if (saveFileDialogTask_KGV.ShowDialog() != DialogResult.OK) 
+                return;
 
             try
             {

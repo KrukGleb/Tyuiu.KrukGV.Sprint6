@@ -41,6 +41,7 @@
             pictureBoxYa__KGV.Location = new Point(12, 12);
             pictureBoxYa__KGV.Name = "pictureBoxYa__KGV";
             pictureBoxYa__KGV.Size = new Size(563, 653);
+            pictureBoxYa__KGV.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxYa__KGV.TabIndex = 0;
             pictureBoxYa__KGV.TabStop = false;
             // 
