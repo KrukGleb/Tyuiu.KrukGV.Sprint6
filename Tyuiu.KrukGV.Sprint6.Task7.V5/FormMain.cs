@@ -6,7 +6,6 @@ namespace Tyuiu.KrukGV.Sprint6.Task7.V5
     public partial class FormMain : Form
     {
         private DataService ds = new DataService();
-        private int[,] resultMatrix;
 
         public FormMain()
         {
@@ -49,7 +48,7 @@ namespace Tyuiu.KrukGV.Sprint6.Task7.V5
 
             try
             {
-                int[,] matrix = ds.LoadMatrix(openFileDialogTask_KGV.FileName);
+                int[,] matrix = ds.LoadMatrix1(openFileDialogTask_KGV.FileName);
                 FillGrid(dataGridViewIn_KGV, matrix);
 
                 dataGridViewOut_KGV.Rows.Clear();
@@ -70,8 +69,10 @@ namespace Tyuiu.KrukGV.Sprint6.Task7.V5
         {
             try
             {
-                resultMatrix = ds.GetMatrix(openFileDialogTask_KGV.FileName);
-                FillGrid(dataGridViewOut_KGV, resultMatrix);
+                int[,] arrayValues = ds.GetMatrix(openFileDialogTask_KGV.FileName);
+
+                FillGrid(dataGridViewOut_KGV, arrayValues);
+                
                 buttonSave_KGV.Enabled = true;
             }
             catch (Exception ex)
@@ -83,22 +84,23 @@ namespace Tyuiu.KrukGV.Sprint6.Task7.V5
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            if (resultMatrix == null) 
+            int[,] arrayValues = ds.GetMatrix(openFileDialogTask_KGV.FileName);
+            if (arrayValues == null) 
                 return;
             if (saveFileDialogTask_KGV.ShowDialog() != DialogResult.OK) 
                 return;
 
             try
             {
-                int rows = resultMatrix.GetLength(0);
-                int columns = resultMatrix.GetLength(1);
+                int rows = arrayValues.GetLength(0);
+                int columns = arrayValues.GetLength(1);
                 StringBuilder sb = new StringBuilder();
 
                 for (int i = 0; i < rows; i++)
                 {
                     for (int j = 0; j < columns; j++)
                     {
-                        sb.Append(resultMatrix[i, j]);
+                        sb.Append(arrayValues[i, j]);
                         if (j != columns - 1) sb.Append(';');
                     }
                     sb.Append(Environment.NewLine);
